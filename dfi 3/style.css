@@ -1,0 +1,292 @@
+/*home*/
+nav {
+    position: fixed;
+
+}
+
+.div-home {
+    background: linear-gradient(to right, rgb(255, 168, 97), rgb(255, 255, 255)); 
+    background-size: cover; 
+    background-position: right; 
+    background-repeat: no-repeat; 
+    height: 535px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+  }
+  /*home*/
+
+  /*payment*/
+
+.pay-container {
+    width: 1200px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+
+}
+
+svg {
+    width: 30px;
+    height: 60px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .icon-cart {
+    position: relative;
+}
+
+header .icon-cart span {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+}
+
+body.showcart .carttab {
+    inset: 0 0 0 auto;
+}
+
+body.showcart .pay-container {
+    transform: translate(-250px);
+}
+
+.carttab {
+    width: 400px;
+    background-color: rgb(52, 26, 26);
+    color: white;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: transform .5s;
+}
+
+.carttab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.paybtn {
+    display: flex;
+    grid-template-columns: (2, 1fr);
+}
+
+.carttab .paybtn button{
+    background-color: yellow;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.carttab .paybtn .tutup {
+    background-color: gray;
+    width: 50%;
+}
+
+.carttab .paybtn .co {
+    width: 50%;
+}
+
+.carttab .listcart .item img {
+    width: 100%;
+}
+
+.carttab .listcart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listcart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: rgb(48, 25, 25);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listcart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: white;
+}
+.listcart .item:nth-child(even) {
+    background-color: rgb(74, 37, 37);
+}
+
+.listcart {
+    overflow: auto;
+}
+
+
+/*gitar*/
+
+.gitar-container {
+    background-image:url('bcgitar.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 170vh;
+}
+
+.pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+/*paul*/
+.item {
+    color: rgb(54, 53, 51);
+    background-color: azure;
+    border: 1px solid rgb(78, 76, 76);
+    border-radius: 25px;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin: 15px 0;
+
+}
+
+.item:hover {
+    box-shadow: 10px 10px 15px rgb(100, 99, 99);
+    transition: opacity 0.3s ease;
+}
+
+.pro-img {
+    height: 225px;
+    width: 175px;
+    object-fit: cover;
+    object-position: 50% 25%;
+}
+
+.pro-btn {
+    background-color: rgb(48, 23, 23);
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    width: 175px;
+    align-items: center;
+
+}
+
+
+/*paul*/
+
+.fender {
+    height: 225px;
+    width: 175px;
+    object-fit: cover;
+    object-position: 50% 25%;
+}
+.tele {
+    height: 225px;
+    width: 175px;
+    object-fit: cover;
+    object-position: 50% 25%;
+}
+.strato {
+    height: 225px;
+    width: 175px;
+    object-fit: cover;
+    object-position: 50% 25%;
+}
+.sch {
+    height: 225px;
+    width: 175px;
+
+}
+
+.gitar2 {
+    color: rgb(255, 226, 163);
+    background-color: azure;
+    border: 1px solid rgb(125, 125, 125);
+    border-radius: 25px;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+.gitar2:hover {
+    box-shadow: 10px 10px 15px rgb(36, 36, 36);
+    transition: 0.3 ease;
+}
+.gitar3 {
+    color: rgb(255, 226, 163);
+    background-color: azure;
+    border: 1px solid rgb(125, 125, 125);
+    border-radius: 25px;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+.gitar3:hover {
+    box-shadow: 10px 10px 15px rgb(36, 36, 36);
+    transition: 0.3 ease;
+}
+.gitar4 {
+    color: rgb(255, 226, 163);
+    background-color: azure;
+    border: 1px solid rgb(125, 125, 125);
+    border-radius: 25px;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+.gitar4:hover {
+    box-shadow: 10px 10px 15px rgb(36, 36, 36);
+    transition: backgr 0.3 ease;
+
+}
+.gitar5 {
+    color: rgb(255, 226, 163);
+    background-color: azure;
+    border: 1px solid rgb(125, 125, 125);
+    border-radius: 25px;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+.gitar5:hover {
+    box-shadow: 10px 10px 15px rgb(36, 36, 36);
+    transition: 0.3 ease;
+}
+
+.drum-container {
+    background-image:url('joey.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 170vh;
+}
+
+.amplifier-container {
+    background-image:url('ampli.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 170vh;
+}
